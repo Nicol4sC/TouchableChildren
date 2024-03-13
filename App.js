@@ -5,6 +5,7 @@ import LoginButton from "./src/components/Buttons";
 export default function App() {
   return (
     <View style={styles.container}>
+      {/* Botao Log in */}
       <TouchableOpacity
         style={styles.button}
         onPress={() => console.log("Log In Pressionado!")}
@@ -12,6 +13,7 @@ export default function App() {
         <Text style={styles.buttonText}>Log In</Text>
       </TouchableOpacity>
 
+      {/* Botao Sign in */}
       <TouchableOpacity
         style={styles.button}
         onPress={() => console.log("Sign in Pressionado!")}
@@ -19,6 +21,7 @@ export default function App() {
         <Text style={styles.buttonText}>Sign In</Text>
       </TouchableOpacity>
 
+      {/* Botao da Imagem */}
       <TouchableOpacity
         style={styles.button}
         onPress={() => console.log("Imagem!")}
@@ -39,18 +42,18 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   button: {
-    backgroundColor: "#3498db",
-    padding: 50, //tamanho do botão
-    margin: 45,
+    backgroundColor: "pink",
+    padding: 100, //tamanho do botão
+    margin: 100,
     borderRadius: 15,
   },
   buttonText: {
-    color: "#ffffff",
+    color: "black",
     fontSize: 30, // tamanho do texto
     fontWeight: "bold",
   },
   image: {
-    width: 150, //tamanho da imagem
-    height: 150,
+    width: 310, //tamanho da imagem
+    height: 250,
   },
 });
